@@ -31,27 +31,28 @@
 
 // console.log(UICtrl.text);
 
-//REVEALING MODULE PATTERN
-const ItemCtrl = (function(){
-  let _data = [];
+// //REVEALING MODULE PATTERN
+// const ItemCtrl = (function(){
+//   let _data = [];
 
-  function add(item){
-    _data.push(item);
-    console.log('Item Added...');
-  }
+//   function add(item){
+//     _data.push(item);
+//     console.log('Item Added...');
+//   }
 
-  function get(id){
-    return _data.find(item => {
-      return item.id === id;
-    })
-  }
+//   function get(id){
+//     return _data.find(item => {
+//       return item.id === id;
+//     })
+//   }
 
-  return {
-    add: add,
-    get: get
-  }
-})();
+//   return {
+//     add: add,
+//     get: get
+//   }
+// })();
 
-ItemCtrl.add({id: 1, name: 'John'});
+// ItemCtrl.add({id: 1, name: 'John'});
+// ItemCtrl.add({id: 2, name: 'Jill'});
 
-console.log(ItemCtrl.get(1));
+// console.log(ItemCtrl.get(2));
