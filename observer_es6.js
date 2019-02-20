@@ -1,6 +1,6 @@
 class EventObserver{
   constructor(){
-    this.observer = [];
+    this.observers = [];
   }
   
   subscribe(fn){
